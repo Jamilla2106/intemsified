@@ -1,0 +1,120 @@
+nav {
+  z-index: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+.banner {
+  min-height: 100vh;
+  position: relative;
+}
+
+.banner:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.as-is-banner:before {
+  content: none;
+}
+
+#homeBanner{
+  background: url(../img/banner3.png) no-repeat center center / cover;
+}
+
+
+
+#homeBanner > p {
+  margin-top: -4%;
+}
+
+.banner * {
+  position: relative;
+}
+
+#aboutUsBanner {
+  background: url(../img/about.jpg) no-repeat center center / cover;
+}
+
+.earth-science-banner {
+    background: url(../img/earth_science.jpg) no-repeat center center / cover;
+}
+
+.general-chemistry-banner {
+    background: url(../img/gen_chemistry.jpg) no-repeat center center / cover;
+}
+
+.patterned-bg {
+  background: url(../img/light-bg.jpg) no-repeat center center / cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.patterned-bg:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.patterned-bg > div {
+  position: relative;
+}
+
+.card {
+  height: 100%;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.video-container > video, 
+.video-container > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.download-link {
+    font-size: 43.6px;
+    margin-top: -12px;
+}
+
+.accordion {
+    --bs-accordion-active-bg: var(--bs-danger-bg-subtle);
+}
+
+.callout {
+    border-left: 0.25rem solid rgb(var(--bs-danger-rgb));
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.callout-white {
+  border-left: 0.25rem solid #fff;
+}
+
+.list-group {
+    --bs-list-group-active-bg: rgb(var(--bs-danger-rgb));
+}
+
+.check-list{
+  list-style: none;
+}
+
+.check-list li:before {
+  content: '✓' !important;
+}
